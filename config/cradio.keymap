@@ -28,30 +28,6 @@
             key-positions = <10 11>;
             bindings = <&kp TAB>;
         };
-
-        combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <17 16>;
-            bindings = <&kp RALT>;
-        };
-
-        combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <11 12>;
-            bindings = <&kp LALT>;
-        };
-
-        combo_lgui {
-            timeout-ms = <50>;
-            key-positions = <12 13>;
-            bindings = <&kp LGUI>;
-        };
-
-        combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp RGUI>;
-        };
     };
 
     keymap {
@@ -69,7 +45,7 @@
         left_layer {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5            &kp NUMBER_6      &kp N7             &kp N8                &kp N9  &kp N0
-&kp TAB       &none         &none         &none         &none             &kp MINUS         &kp EQUAL          &kp NON_US_BACKSLASH  &none   &none
+&kp TAB       &none         &none         &none         &none             &kp MINUS         &kp EQUAL          &kp NON_US_BACKSLASH  &none   &kp SQT
 &kp ESC       &kp TILDE     &none         &none         &none             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                 &none   &kp DEL
                                           &mo 1         &kp LEFT_SHIFT    &kp RGUI          &mo 2
             >;
