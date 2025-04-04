@@ -44,37 +44,28 @@
 
         left_layer {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5            &kp NUMBER_6      &kp N7             &kp N8                &kp N9  &kp N0
-&kp TAB       &none         &none         &none         &none             &kp MINUS         &kp EQUAL          &kp NON_US_BACKSLASH  &none   &kp SQT
-&kp ESC       &kp TILDE     &none         &none         &none             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                 &none   &kp DEL
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5            &kp NUMBER_6      &kp N7             &kp N8                &kp N9                 &kp N0
+&none         &none         &none         &none         &none             &kp MINUS         &kp EQUAL          &kp NON_US_BACKSLASH  &kp TILDE              &kp SQT
+&none         &kp TILDE     &none         &none         &none             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DEL
                                           &mo 1         &kp LEFT_SHIFT    &kp RGUI          &mo 2
             >;
         };
 
         right_layer {
             bindings = <
-&none  &none     &kp UP_ARROW  &none      &none    &none  &none  &none  &none  &bt BT_CLR_ALL
-&none  &kp LEFT  &kp DOWN      &kp RIGHT  &none    &none  &none  &none  &none  &bt BT_NXT
-&none  &none     &none         &none      &none    &none  &none  &none  &none  &bt BT_PRV
-                               &mo 4      &none    &none  &mo 2
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&none  &none     &kp UP_ARROW  &none      &none    &none  &none  &none  &bt BT_CLR_ALL  &bt BT_CLR
+&none  &kp LEFT  &kp DOWN      &kp RIGHT  &none    &none  &none  &none  &none           &bt BT_NXT
+&none  &none     &none         &none      &none    &none  &none  &none  &none           &bt BT_PRV
+                               &mo 3      &none    &none  &mo 2
             >;
         };
 
         tri_layer {
             bindings = <
-&kp NUM_1   &kp NUM_2   &kp NUM_3   &kp NUM_4  &kp NUM_5    &trans  &trans     &trans        &trans      &trans
-&kp F1      &kp F2      &kp F3      &kp F4     &kp F5       &trans  &kp PG_UP  &kp K_VOL_UP  &kp K_MUTE  &trans
-&bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &kp F6     &kp F7       &trans  &kp PG_DN  &kp K_VOL_DN  &trans      &trans
-                                    &trans     &trans       &trans  &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &trans     &trans        &trans      &trans
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &trans  &kp PG_UP  &kp K_VOL_UP  &kp K_MUTE  &trans
+&kp F11  &kp F12  &none   &none   &none      &trans  &kp PG_DN  &kp K_VOL_DN  &trans      &trans
+                          &trans  &trans     &trans  &trans
             >;
         };
     };
