@@ -73,10 +73,10 @@
 
         tri_layer {
             bindings = <
-&none  &none  &mkp MB1  &mkp MB2  &mkp MB3    &trans  &trans          &mmv MOVE_UP    &trans           &trans
-&none  &none  &none     &none     &none       &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&none  &none  &none     &none     &none       &trans  &none           &none           &trans           &trans
-                        &trans    &trans      &trans  &trans
+&none  &none  &mkp MB1  &mkp MB2  &mkp MB3    &none  &none           &mmv MOVE_UP    &none            &msc SCRL_UP
+&none  &none  &none     &none     &none       &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN
+&none  &none  &none     &none     &none       &none  &none           &none           &none            &none
+                        &none     &none       &none  &none
             >;
         };
     };
