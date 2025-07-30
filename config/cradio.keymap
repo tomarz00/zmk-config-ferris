@@ -41,6 +41,22 @@
         };
     };
 
+    behaviors {
+        double_tap_esc: double_tap_esc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOUBLE_TAP_ESC";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp ESCAPE>;
+        };
+
+        doubletap_tab: doubletap_tab {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOUBLETAP_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp TAB>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
