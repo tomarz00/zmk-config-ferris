@@ -21,11 +21,25 @@
         combo_windows {
             bindings = <&kp LEFT_GUI>;
             key-positions = <22 23>;
+            timeout-ms = <250>;
         };
 
         ctrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <20 21>;
+            timeout-ms = <250>;
+        };
+
+        tabcombo {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+            timeout-ms = <250>;
+        };
+
+        esccombo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+            timeout-ms = <250>;
         };
     };
 
@@ -65,8 +79,8 @@
 
         default_layer {
             bindings = <
-&double_tap_esc    &kp W  &kp E  &kp R  &kp T                   &kp Y        &kp U                    &kp I      &kp O    &kp P
-&doubletap_tab     &kp S  &kp D  &kp F  &kp G                   &kp H        &kp J                    &kp K      &kp L    &kp SEMICOLON
+&kp Q              &kp W  &kp E  &kp R  &kp T                   &kp Y        &kp U                    &kp I      &kp O    &kp P
+&kp A              &kp S  &kp D  &kp F  &kp G                   &kp H        &kp J                    &kp K      &kp L    &kp SEMICOLON
 &hold_tap LCTRL Z  &kp X  &kp C  &kp V  &kp B                   &kp N        &kp M                    &kp COMMA  &kp DOT  &kp SLASH
                                  &mo 1  &mt LEFT_SHIFT SPACE    &lt 2 ENTER  &mt RIGHT_ALT BACKSPACE
             >;
