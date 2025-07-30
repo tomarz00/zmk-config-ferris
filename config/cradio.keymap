@@ -35,7 +35,7 @@
         tabcombo {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
-            timeout-ms = <100>;
+            timeout-ms = <400>;
             require-prior-idle-ms = <100>;
         };
 
