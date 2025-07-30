@@ -35,15 +35,15 @@
         tabcombo {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <200>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
 
         esccombo {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <200>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <300>;
         };
     };
 
@@ -63,7 +63,7 @@
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp TAB>;
 
-            tapping-term-ms = <180>;
+            tapping-term-ms = <500>;
         };
 
         hold_tap: hold_tap {
