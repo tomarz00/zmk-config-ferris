@@ -21,29 +21,26 @@
         combo_windows {
             bindings = <&kp LEFT_GUI>;
             key-positions = <22 23>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <200>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <0>;
         };
 
         ctrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <20 21>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <200>;
+            timeout-ms = <500>;
         };
 
         tabcombo {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <300>;
+            timeout-ms = <500>;
         };
 
         esccombo {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <300>;
+            timeout-ms = <500>;
         };
     };
 
