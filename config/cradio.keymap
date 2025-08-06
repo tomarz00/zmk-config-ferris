@@ -19,21 +19,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tabcombo {
-            bindings = <&kp TAB>;
-            key-positions = <10 11>;
-            timeout-ms = <500>;
-        };
-
-        esccombo {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
-            timeout-ms = <500>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         double_tap_esc: double_tap_esc {
